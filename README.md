@@ -40,6 +40,7 @@ Nå har du satt opp din programvare i din raspberry pi.
      sudo apt update # Ser etter nye oppdateringer
      sudo apt upgrade #Oppdaterer systemet med de nyeste pakkene
      ```
+  Trykk `Y/y` på `Do you want to continue?`
    - **Sett opp brannmur med UFW (Uncomplicated Firewall):**
      ```bash
       
@@ -51,6 +52,8 @@ Nå har du satt opp din programvare i din raspberry pi.
    - **Installer SSH-server:**
      ```bash
      sudo apt install openssh-server # Installerer programvaren som lar deg bruke SSH.
+     ```
+
      sudo systemctl enable ssh # Setter opp SSH til å starte automatisk når Raspberry Pi starter
      sudo systemctl start ssh # Starter SSH-tjenesten
      ```
