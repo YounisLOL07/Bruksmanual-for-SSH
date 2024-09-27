@@ -8,6 +8,8 @@
 
 4. Det forutsettes at du kan bruke en søkemotor og laste ned filer fra internett.
 
+5. Denne github repoet inneholder en README fil, en mappe med bilder som referanse, og telefonkatalog,
+
 ## Sette opp Raspberry Pi
 1. Gå til en søkemotoren og søk etter **"Raspberry Pi Imager"** eller bruk [denne linken](https://www.raspberrypi.com/software/).
 
