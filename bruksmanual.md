@@ -22,7 +22,7 @@
 2. Følg disse kommandoene for å sette opp SSH:
    - **Oppdatering av programvare:**
      ```bash
-     sudo apt update
+     sudo apt update 
      sudo apt upgrade
      ```
    - **Sett opp brannmur med UFW:**
@@ -68,3 +68,4 @@
 4. Koble til Raspberry Pi fra en annen enhet via SSH:
    ```bash
    ssh brukernavn@ip
+  Nå kan du bruke ubuntu fra Pcen.
