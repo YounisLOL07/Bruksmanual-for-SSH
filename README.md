@@ -53,7 +53,9 @@ Nå har du satt opp din programvare i din raspberry pi.
      ```bash
      sudo apt install openssh-server # Installerer programvaren som lar deg bruke SSH.
      ```
+     Trykk `Y/y` på `Do you want to continue?`
 
+     ```bash
      sudo systemctl enable ssh # Setter opp SSH til å starte automatisk når Raspberry Pi starter
      sudo systemctl start ssh # Starter SSH-tjenesten
      ```
@@ -69,8 +71,26 @@ Nå har du satt opp din programvare i din raspberry pi.
      sudo apt install python3-pip # Installerer Python 3
      sudo apt install git # Installerer Git
      sudo apt install mariadb-server # Installerer MariaDB (en database)
+     ```
+     Trykk `Y/y` på `Do you want to continue?`
+     ```bash
      sudo mysql_secure_installation # Starter en enkel guide for å gjøre MariaDB sikrere
      ```
+    Du kommer til å bli spurt om forskjellige ting. Svar dette på de spørsmålene: 
+
+     Skriv passordet du bruker for å logge inn på `Enter current password for root (enter for none): `
+
+     `Y/y` på `Switch to unix_socket authentication`
+
+     `N/n` på `Change the root password`
+
+     `Y/y` på `Remove anonymous users`
+
+     `Y/y` på `Disallow root login remotely` 
+
+     `Y/y` på `Remove test database and access to it?`
+
+     `Y/y` på `Reload privilege tables now?`
    - **Lag en ny databasebruker:**
      ```bash
      sudo mariadb -u root # Logger inn i MariaDB som root-brukeren
