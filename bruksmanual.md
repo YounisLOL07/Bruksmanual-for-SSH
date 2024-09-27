@@ -47,15 +47,21 @@
 3. Installer nødvendige pakker:
    - **Installer Git, Python og MariaDB:**
      ```bash
-     sudo apt install python3-pip git mariadb-server
+     sudo apt install python3-pip 
+     sudo apt install git 
+     sudo apt install mariadb-server
      sudo mysql_secure_installation
      ```
    - **Lag en ny databasebruker:**
      ```bash
      sudo mariadb -u root
+     
      CREATE USER 'brukernavn'@'localhost' IDENTIFIED BY 'passord';
+
      GRANT ALL PRIVILEGES ON *.* TO 'brukernavn'@'localhost';
+
      FLUSH PRIVILEGES;
+
      EXIT;
      ```
 
